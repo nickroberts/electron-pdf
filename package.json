@@ -1,0 +1,50 @@
+{
+  "name": "electron-pdf",
+  "productName": "ElectronPdf",
+  "version": "0.0.0",
+  "description": "My cool app",
+  "license": "MIT",
+  "repository": "nickroberts/electron-pdf",
+  "author": {
+    "name": "Nick Roberts",
+    "email": "djparadyme@gmail.com",
+    "url": "nickroberts.github.io"
+  },
+  "scripts": {
+    "test": "xo",
+    "start": "electron .",
+    "build": "electron-packager . --out=dist --asar --overwrite --all",
+    "rebuild": "electron-rebuild",
+    "rebuild:im": "electron-rebuild -f -w imagemagick-native"
+  },
+  "files": [
+    "index.js",
+    "index.html",
+    "index.css"
+  ],
+  "keywords": [
+    "electron-app",
+    "electron"
+  ],
+  "dependencies": {
+    "bluebird": "^3.4.7",
+    "electron-debug": "^1.0.0",
+    "gm": "^1.23.0",
+    "imagemagick-native": "^1.9.3",
+    "rimraf": "^2.5.4"
+  },
+  "devDependencies": {
+    "devtron": "^1.1.0",
+    "electron": "^1.3.3",
+    "electron-packager": "^8.0.0",
+    "electron-rebuild": "^1.5.5",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "esnext": true,
+    "envs": [
+      "node",
+      "browser"
+    ]
+  }
+}
