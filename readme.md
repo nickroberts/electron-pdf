@@ -2,6 +2,8 @@
 
 > My cool app
 
+Need to have Ghostscript, Graphicsmagick and Imagemagick installed first...at least for now.
+
 
 ## Dev
 
